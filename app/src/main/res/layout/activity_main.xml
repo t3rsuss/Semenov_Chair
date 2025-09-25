@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Створення стільця"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Матеріал:"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/materialEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Наприклад: дерево, метал, пластик"
+        android:layout_marginBottom="16dp"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Колір:"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/colorEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Наприклад: коричневий, білий, чорний"
+        android:layout_marginBottom="16dp"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Висота (см):"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/heightEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Наприклад: 85"
+        android:layout_marginBottom="16dp"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ціна (грн):"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/priceEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Наприклад: 2500.50"
+        android:layout_marginBottom="16dp"
+        android:inputType="numberDecimal" />
+
+    <CheckBox
+        android:id="@+id/hasArmrestsCb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Має підлокітники"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Створити стілець"
+        android:textSize="16sp"
+        android:padding="16dp" />
+
+</LinearLayout>
