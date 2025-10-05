@@ -1,4 +1,4 @@
-package com.example.semenov_chair;
+package com.example.semenov_chair.view;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -6,6 +6,9 @@ import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.semenov_chair.R;
+import com.example.semenov_chair.model.Chair;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -16,11 +19,11 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_second);
+
         chairTv = findViewById(R.id.chairTv);
 
         if (getIntent() != null && getIntent().getExtras() != null && !getIntent().getExtras().isEmpty()) {
-            Bundle extras = getIntent().getExtras();
-            Chair tmpChair = (Chair) extras.getSerializable("CHAIR_KEY");
+            Chair tmpChair = (Chair) getIntent().getExtras().getSerializable("CHAIR_KEY");
 
             if (tmpChair != null) {
                 String chairInfo = "Інформація про стілець:" + "\n" +

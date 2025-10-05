@@ -1,4 +1,4 @@
-package com.example.semenov_chair;
+package com.example.semenov_chair.model;
 
 import java.io.Serializable;
 
